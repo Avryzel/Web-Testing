@@ -119,16 +119,16 @@ a:hover{
     max-height: 300px;
 }
 
-.hamburger-icon.menu span:first-child{
+.hamburger-icon.open span:first-child{
     transform: rotate(45deg) translate(10px, 5px);
 }
 
-.hamburger-icon.menu span:nth-child{
+.hamburger-icon.open span:nth-child(2){
     opacity: 0;
 }
 
-.hamburger-icon.menu span:last-child{
-    transform: rotate(45deg) translate(10px, -5px);
+.hamburger-icon.open span:last-child{
+    transform: rotate(-45deg) translate(10px, -5px);
 }
 
 .hamburger-icon span:first-child{
@@ -144,15 +144,27 @@ a:hover{
 }
 
 
-/* List */
-.songList{
+/* Desktop List */
+#desktop-songList{
     display: flex;
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 2rem;
     list-style: none;
-    margin: 50px;
+    margin: 0px;
+    max-width: 100vw;
+}
+
+/* Mobile List */
+#mobile-songList{
+    display: none;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    list-style: none;
+    margin: 0px;
     max-width: 100vw;
 }
 
