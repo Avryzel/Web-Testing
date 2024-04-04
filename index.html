@@ -6,9 +6,11 @@
     <title>MUSIC</title>
     <link rel="icon" type="image/png" href="https://kemtan.github.io/musicNote.png">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
 </head>
 <body>
-    <nav id="nav">
+    <!-- Desktop Nav -->
+    <nav  id="desktop-nav">
         <div class="brand">MUSIC</div>
         <div>
             <ul class="nav-links">
@@ -20,6 +22,26 @@
         </div>
     </nav>
 
+    <!-- Hamburger Nav -->
+    <nav  id="hamburger-nav">
+        <div class="brand">MUSIC</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div>
+                <ul class="menu-links">
+                    <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+                    <li><a href="#explore" onclick="toggleMenu()">Explore</a></li>
+                    <li><a href="#list" onclick="toggleMenu()">List</a></li>
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
 
     <ul class="songList">
         <li><a href="./songs/song01/song01.html"><img src="https://kemtan.github.io/album_cover.jpg" height="200px" alt="Album cover"></a></li>
@@ -27,5 +49,8 @@
         <li><a href="./songs/song03/song03.html"><img src="https://kemtan.github.io/album_cover.jpg" height="200px" alt="Album cover"></a></li>
         <li><a href="./songs/song01/song01.html"><img src="https://kemtan.github.io/album_cover.jpg" height="200px" alt="Album cover"></a></li>
     </ul>
+
+    <!-- Script -->
+    <script src="script.js"></script>
 </body>
 </html>
