@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUSIC</title>
+    <link rel="icon" type="image/png" href="https://kemtan.github.io/musicNote.png">
+    <link rel="stylesheet" href="./css/list.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <!-- Desktop Nav -->
+    <nav  id="desktop-nav">
+        <div class="brand">MUSIC</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#explore">Explore</a></li>
+                <li><a href="./list.html">List</a></li>
+                <li><a href="./index.html#about">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hamburger Nav -->
+    <nav  id="hamburger-nav">
+        <div class="brand">MUSIC</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div>
+                <ul class="menu-links">
+                    <li><a href="./index.html" onclick="toggleMenu()">Home</a></li>
+                    <li><a href="#explore" onclick="toggleMenu()">Explore</a></li>
+                    <li><a href="./list.html" onclick="toggleMenu()">List</a></li>
+                    <li><a href="./index.html#about" onclick="toggleMenu()">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- List -->
+    <div class="lists">
+        <!-- List Kemtan-->
+        <h1>Kemtan's List</h1>
+        <div id="list-kemtan">
+            <div class="flex-list">
+                <div id="song01">
+                    <a href="./songs/song01/song01.html"><img src="https://kemtan.github.io/album_cover.jpg" alt="" height="150px"></a>
+                    <h3>Setiap Waktu</h3>
+                </div>
+            </div>
+        </div>
+        <br>
+        <!-- List Ijel -->
+        <h1>Ijel's List</h1>
+        <div id="list-ijel">
+            <div class="flex-list">
+                <div id="song02">
+                    <a href="./songs/song02/song02.html" class="songs"><img src="./songs/song02/Favicons.jpg" height="150px" alt="Album cover"></a>
+                    <h3>Full Moon Full Life</h3>
+                </div>
+                <div id="song03">
+                    <a href="./songs/song03/song03.html" class="songs"><img src="./songs/song03/Persona4.jpg" height="150px" alt="Album cover"></a>
+                    <h3>Your Affection</h3>
+                </div>
+                <div id="song03">
+                    <a href="./songs/song03/song03.html" class="songs"><img src="./songs/song03/Persona4.jpg" height="150px" alt="Album cover"></a>
+                    <h3>Your Affection</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
